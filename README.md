@@ -1,4 +1,4 @@
-# Hi there, I'm Lương Chung Hội 👋
+# Hi there, I'm Lương Chung Hội 👋 &nbsp; ![Visitor Count](https://komarev.com/ghpvc/?username=lchryu&color=06b6d4&style=flat-square&label=PROFILE+VIEWS)
 
 <div align="center">
   <img src="banner.svg?v=3" alt="Lương Chung Hội Banner" width="100%" />
@@ -13,7 +13,11 @@ I'm a passionate **Software Engineer** and **Full-Stack Web Developer** who love
 - 🔭 **Current Focus:** Building reactive frontend interfaces and scalable backend solutions.
 - 🌱 **Learning & Exploring:** Advanced software architectures, cloud services, and system performance optimizations.
 - ⚡ **Fun Fact:** I believe writing code is a form of art. A perfect UI is just as important as a robust API.
-- 📫 **Reach Me:** Feel free to connect or drop an email!
+- 📫 **Reach Me:**
+  <br/>
+  <a href="mailto:lch.ryu2001@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /></a>
+  <a href="https://www.facebook.com/lch.ryu2001"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook" /></a>
+  <a href="https://www.youtube.com/@lchryu"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
 
 <br/>
 
