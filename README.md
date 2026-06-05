@@ -1,18 +1,18 @@
 # Hi there, I'm Lương Chung Hội 👋 &nbsp; ![Visitor Count](https://komarev.com/ghpvc/?username=lchryu&color=06b6d4&style=flat-square&label=PROFILE+VIEWS)
 
 <div align="center">
-  <img src="banner.svg?v=5" alt="Lương Chung Hội Banner" width="100%" />
+  <img src="banner.svg?v=6" alt="Lương Chung Hội Banner" width="100%" />
 </div>
 
 <br/>
 
 ### 💫 About Me
 
-I'm a passionate **Software Engineer** and **Full-Stack Web Developer** who loves building elegant, responsive, and high-performance web applications. Beyond development, I have a deep love for mathematics, programming education, and AI / Computer Vision.
+I'm a **Tech Enthusiast** and **Explorer** on a quest to understand how the world operates. Rather than limiting myself to a single domain, I dive deep into diverse software worlds—researching Full-Stack Web, Mobile Apps, AI/Computer Vision, and Game Development. I'm also deeply passionate about foreign languages, programming education, and dream of traveling the globe.
 
-- 📐 **Passions:** Mathematics, Programming Education, AI & Computer Vision, and Software Development in general.
-- 🗣️ **Languages:** Passionate about learning foreign languages, currently focusing on 🇬🇧 **English** and 🇨🇳 **Chinese**.
-- 🔭 **Current Focus:** Building reactive frontend interfaces, scalable backend systems, and exploring AI/CV solutions.
+- 📐 **My Quest:** Exploring how the world works through technology—focusing on Software Development (Web/Apps/Games), Mathematics, and AI.
+- 🎓 **Education:** Enthusiastic about programming education and sharing coding knowledge with others.
+- 🗣️ **Languages & Travel:** Deeply passionate about foreign languages (currently learning 🇬🇧 **English** and 🇨🇳 **Chinese**) and dreaming of traveling the world.
 - ⚡ **Fun Fact:** I believe writing code is a form of art. A perfect UI is just as important as a robust API.
 - 📫 **Reach Me:**
   <br/>
