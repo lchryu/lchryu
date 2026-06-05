@@ -8,10 +8,11 @@
 
 ### 💫 About Me
 
-I'm a passionate **Software Engineer** and **Full-Stack Web Developer** who loves building elegant, responsive, and high-performance web applications. I enjoy solving complex problems, writing clean code, and constantly learning new technologies.
+I'm a passionate **Software Engineer** and **Full-Stack Web Developer** who loves building elegant, responsive, and high-performance web applications. Beyond development, I have a deep love for mathematics, programming education, and AI / Computer Vision.
 
-- 🔭 **Current Focus:** Building reactive frontend interfaces and scalable backend solutions.
-- 🌱 **Learning & Exploring:** Advanced software architectures, cloud services, and system performance optimizations.
+- 📐 **Passions:** Mathematics, Programming Education, AI & Computer Vision, and Software Development in general.
+- 🗣️ **Languages:** Passionate about learning foreign languages, currently focusing on 🇬🇧 **English** and 🇨🇳 **Chinese**.
+- 🔭 **Current Focus:** Building reactive frontend interfaces, scalable backend systems, and exploring AI/CV solutions.
 - ⚡ **Fun Fact:** I believe writing code is a form of art. A perfect UI is just as important as a robust API.
 - 📫 **Reach Me:**
   <br/>
