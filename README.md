@@ -58,6 +58,27 @@ I'm a **Tech Enthusiast** and **Explorer** on a quest to understand how the worl
 
 <br/>
 
+### 🚀 Featured Projects & Research
+
+<div align="center">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td align="center" valign="top">
+        <a href="https://github.com/lchryu/Predict-gender-from-voice">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=lchryu&repo=Predict-gender-from-voice&theme=tokyonight" alt="Predict gender from voice" />
+        </a>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://github.com/lchryu/Jack-s-Adventure">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=lchryu&repo=Jack-s-Adventure&theme=tokyonight" alt="Jack's Adventure" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<br/>
+
 ### 📊 GitHub Statistics
 
 <div align="center">
