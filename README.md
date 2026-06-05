@@ -1,7 +1,7 @@
-# Hi there, I'm Lương Chung Hải 👋
+# Hi there, I'm Lương Chung Hội 👋
 
 <div align="center">
-  <img src="banner.svg" alt="Lương Chung Hải Banner" width="100%" />
+  <img src="banner.svg" alt="Lương Chung Hội Banner" width="100%" />
 </div>
 
 <br/>

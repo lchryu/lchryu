@@ -79,8 +79,8 @@
 
   <!-- Profile Text Information -->
   <!-- Name Title with Double Glow -->
-  <text x="80" y="135" fill="url(#neonCyan)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="38" font-weight="900" letter-spacing="1">LƯƠNG CHUNG HẢI</text>
-  <text x="80" y="135" fill="none" stroke="#22d3ee" stroke-width="2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="38" font-weight="900" letter-spacing="1" opacity="0.6" filter="url(#glowCyan)">LƯƠNG CHUNG HẢI</text>
+  <text x="80" y="135" fill="url(#neonCyan)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="38" font-weight="900" letter-spacing="1">LƯƠNG CHUNG HỘI</text>
+  <text x="80" y="135" fill="none" stroke="#22d3ee" stroke-width="2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="38" font-weight="900" letter-spacing="1" opacity="0.6" filter="url(#glowCyan)">LƯƠNG CHUNG HỘI</text>
 
   <!-- Tagline / Role -->
   <text x="80" y="178" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" letter-spacing="0.5">Software Engineer / Full-Stack Web Developer</text>
