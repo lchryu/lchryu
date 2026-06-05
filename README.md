@@ -1,7 +1,7 @@
 # Hi there, I'm Lương Chung Hội 👋 &nbsp; ![Visitor Count](https://komarev.com/ghpvc/?username=lchryu&color=06b6d4&style=flat-square&label=PROFILE+VIEWS)
 
 <div align="center">
-  <img src="banner.svg?v=6" alt="Lương Chung Hội Banner" width="100%" />
+  <img src="banner.svg?v=7" alt="Lương Chung Hội Banner" width="100%" />
 </div>
 
 <br/>
