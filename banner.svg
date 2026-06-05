@@ -1,183 +1,190 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
-  <!-- CSS Animations -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%" role="img" aria-labelledby="title desc">
+  <title id="title">LCHRYU cyber lab profile banner</title>
+  <desc id="desc">Animated developer banner with neon HUD panels, terminal code, radar, and skill chips.</desc>
+
   <style>
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.25; }
-      50% { opacity: 0.95; }
+    @keyframes gridMove {
+      from { transform: translateY(0); }
+      to { transform: translateY(28px); }
     }
-    @keyframes pulse {
-      0%, 100% { opacity: 0.35; }
-      50% { opacity: 0.85; }
-    }
-    @keyframes float-1 {
-      0%, 100% { transform: translate(0px, 0px); }
-      50% { transform: translate(15px, -10px); }
-    }
-    @keyframes float-2 {
-      0%, 100% { transform: translate(0px, 0px); }
-      50% { transform: translate(-15px, 10px); }
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0; }
-    }
-    @keyframes statusPulse {
-      0%, 100% { opacity: 0.4; }
+    @keyframes glow {
+      0%, 100% { opacity: .55; }
       50% { opacity: 1; }
     }
-    @keyframes type-line-2 {
-      0%, 20% { opacity: 0; }
-      25%, 100% { opacity: 1; }
+    @keyframes floatA {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(18px, -16px); }
     }
-    @keyframes type-line-3 {
-      0%, 45% { opacity: 0; }
-      50%, 100% { opacity: 1; }
+    @keyframes floatB {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-22px, 14px); }
     }
-    @keyframes type-line-4 {
-      0%, 70% { opacity: 0; }
-      75%, 100% { opacity: 1; }
+    @keyframes scan {
+      0% { transform: translateY(-80px); opacity: 0; }
+      15%, 85% { opacity: .28; }
+      100% { transform: translateY(460px); opacity: 0; }
     }
-    @keyframes type-line-5 {
-      0%, 90% { opacity: 0; }
-      95%, 100% { opacity: 1; }
+    @keyframes blink {
+      0%, 45% { opacity: 1; }
+      46%, 100% { opacity: 0; }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -280; }
+    }
+    @keyframes radar {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes typeIn {
+      from { opacity: 0; transform: translateX(-14px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes bar {
+      0%, 100% { transform: scaleY(.42); }
+      50% { transform: scaleY(1); }
     }
 
-    .blob-1 { animation: float-1 12s infinite ease-in-out; }
-    .blob-2 { animation: float-2 15s infinite ease-in-out; }
-    .star-1 { animation: twinkle 3s infinite ease-in-out; }
-    .star-2 { animation: twinkle 4.2s infinite ease-in-out; }
-    .star-3 { animation: twinkle 2.5s infinite ease-in-out; }
-    .star-4 { animation: twinkle 3.5s infinite ease-in-out; }
-    .star-5 { animation: twinkle 5s infinite ease-in-out; }
-    .pulse-glow { animation: pulse 3s infinite ease-in-out; }
-    .pulse-green { animation: statusPulse 1.8s infinite ease-in-out; }
-    .cursor { animation: blink 1s infinite; }
-    .code-2 { animation: type-line-2 4s ease-out forwards; }
-    .code-3 { animation: type-line-3 4s ease-out forwards; }
-    .code-4 { animation: type-line-4 4s ease-out forwards; }
-    .code-5 { animation: type-line-5 4s ease-out forwards; }
+    .grid { animation: gridMove 3.6s linear infinite; }
+    .glow { animation: glow 2.4s ease-in-out infinite; }
+    .float-a { animation: floatA 10s ease-in-out infinite; }
+    .float-b { animation: floatB 12s ease-in-out infinite; }
+    .scan { animation: scan 4.8s linear infinite; }
+    .dash { animation: dash 6s linear infinite; }
+    .radar { animation: radar 5s linear infinite; transform-origin: 970px 214px; }
+    .cursor { animation: blink 1s steps(2, jump-none) infinite; }
+    .line-1 { animation: typeIn .4s ease-out both .2s; }
+    .line-2 { animation: typeIn .4s ease-out both .55s; }
+    .line-3 { animation: typeIn .4s ease-out both .9s; }
+    .line-4 { animation: typeIn .4s ease-out both 1.25s; }
+    .line-5 { animation: typeIn .4s ease-out both 1.6s; }
+    .bar-1 { animation: bar 1.4s ease-in-out infinite; transform-origin: center bottom; }
+    .bar-2 { animation: bar 1.8s ease-in-out infinite .2s; transform-origin: center bottom; }
+    .bar-3 { animation: bar 1.2s ease-in-out infinite .4s; transform-origin: center bottom; }
+    .bar-4 { animation: bar 1.6s ease-in-out infinite .1s; transform-origin: center bottom; }
+    .bar-5 { animation: bar 1.3s ease-in-out infinite .35s; transform-origin: center bottom; }
   </style>
 
-  <!-- Definitions for Gradients and Filters -->
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f19" />
-      <stop offset="50%" stop-color="#111827" />
-      <stop offset="100%" stop-color="#070a13" />
-    </linearGradient>
-    
-    <!-- Neon Colors -->
-    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#3b82f6" />
-    </linearGradient>
-    
-    <linearGradient id="neonPink" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#d946ef" />
-      <stop offset="100%" stop-color="#ec4899" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="42%" stop-color="#071426" />
+      <stop offset="72%" stop-color="#12051f" />
+      <stop offset="100%" stop-color="#030712" />
     </linearGradient>
 
-    <!-- Glowing Filters -->
-    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <linearGradient id="cyanPink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="48%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#f472b6" />
+    </linearGradient>
+
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0" />
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity=".65" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </linearGradient>
+
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity=".45" />
+      <stop offset="60%" stop-color="#8b5cf6" stop-opacity=".12" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
     </filter>
-    
-    <filter id="glowPink" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
+
+    <pattern id="smallGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1e293b" stroke-width="1" opacity=".62" />
+    </pattern>
   </defs>
 
-  <!-- Background Canvas -->
-  <rect width="800" height="300" fill="url(#bgGrad)" rx="16" />
-  
-  <!-- Sleek Tech Grid Overlay -->
-  <g stroke="#1e293b" stroke-width="0.8" opacity="0.6">
-    <!-- Vertical lines -->
-    <line x1="50" y1="0" x2="50" y2="300" />
-    <line x1="100" y1="0" x2="100" y2="300" />
-    <line x1="150" y1="0" x2="150" y2="300" />
-    <line x1="200" y1="0" x2="200" y2="300" />
-    <line x1="250" y1="0" x2="250" y2="300" />
-    <line x1="300" y1="0" x2="300" y2="300" />
-    <line x1="350" y1="0" x2="350" y2="300" />
-    <line x1="400" y1="0" x2="400" y2="300" />
-    <line x1="450" y1="0" x2="450" y2="300" />
-    <line x1="500" y1="0" x2="500" y2="300" />
-    <line x1="550" y1="0" x2="550" y2="300" />
-    <line x1="600" y1="0" x2="600" y2="300" />
-    <line x1="650" y1="0" x2="650" y2="300" />
-    <line x1="700" y1="0" x2="700" y2="300" />
-    <line x1="750" y1="0" x2="750" y2="300" />
-    <!-- Horizontal lines -->
-    <line x1="0" y1="50" x2="800" y2="50" />
-    <line x1="0" y1="100" x2="800" y2="100" />
-    <line x1="0" y1="150" x2="800" y2="150" />
-    <line x1="0" y1="200" x2="800" y2="200" />
-    <line x1="0" y1="250" x2="800" y2="250" />
+  <rect width="1200" height="420" rx="24" fill="url(#bg)" />
+  <g class="grid">
+    <rect x="0" y="-28" width="1200" height="476" fill="url(#smallGrid)" opacity=".72" />
+  </g>
+  <rect width="1200" height="420" rx="24" fill="url(#halo)" />
+
+  <g class="float-a" filter="url(#softGlow)">
+    <circle cx="178" cy="88" r="118" fill="#0891b2" opacity=".20" />
+    <circle cx="1040" cy="330" r="138" fill="#db2777" opacity=".16" />
+  </g>
+  <g class="float-b" filter="url(#softGlow)">
+    <circle cx="780" cy="82" r="90" fill="#7c3aed" opacity=".16" />
+    <circle cx="420" cy="370" r="106" fill="#0ea5e9" opacity=".13" />
   </g>
 
-  <!-- Soft Ambient Light Blobs -->
-  <circle class="blob-1" cx="100" cy="80" r="140" fill="#0891b2" opacity="0.12" filter="url(#glowCyan)" />
-  <circle class="blob-2" cx="700" cy="220" r="150" fill="#c026d3" opacity="0.1" filter="url(#glowPink)" />
-  
-  <!-- Glowing Connection Paths -->
-  <path d="M -50 240 L 220 240 L 260 200 L 540 200 L 580 240 L 850 240" fill="none" stroke="url(#neonCyan)" stroke-width="2" opacity="0.3" />
-  <path d="M -50 240 L 220 240 L 260 200 L 540 200 L 580 240 L 850 240" fill="none" stroke="#06b6d4" stroke-width="4" opacity="0.1" filter="url(#glowCyan)" />
+  <path class="dash" d="M-40 330 H210 L260 282 H525 L574 236 H850 L908 284 H1240" fill="none" stroke="url(#cyanPink)" stroke-width="3" stroke-dasharray="18 18" opacity=".55" />
+  <path d="M-40 330 H210 L260 282 H525 L574 236 H850 L908 284 H1240" fill="none" stroke="#22d3ee" stroke-width="10" opacity=".08" filter="url(#softGlow)" />
 
-  <!-- Glowing Neon Stars Background -->
-  <!-- Star 1 -->
-  <path class="star-1" d="M 68 85 q 4 0 4 -4 q 0 4 4 4 q -4 0 -4 4 q 0 -4 -4 -4" fill="#06b6d4" opacity="0.75" filter="url(#glowCyan)" />
-  <!-- Star 2 -->
-  <path class="star-2" d="M 728 95 q 4 0 4 -4 q 0 4 4 4 q -4 0 -4 4 q 0 -4 -4 -4" fill="#d946ef" opacity="0.7" filter="url(#glowPink)" />
-  <!-- Star 3 -->
-  <path class="star-3" d="M 703 163 q 3 0 3 -3 q 0 3 3 3 q -3 0 -3 3 q 0 -3 -3 -3" fill="#06b6d4" opacity="0.6" filter="url(#glowCyan)" />
-  <!-- Star 4 -->
-  <path class="star-4" d="M 93 253 q 3 0 3 -3 q 0 3 3 3 q -3 0 -3 3 q 0 -3 -3 -3" fill="#d946ef" opacity="0.5" filter="url(#glowPink)" />
-  <!-- Star 5 -->
-  <path class="star-5" d="M 500 80 q 3 0 3 -3 q 0 3 3 3 q -3 0 -3 3 q 0 -3 -3 -3" fill="#eab308" opacity="0.75" />
+  <rect class="scan" x="0" y="0" width="1200" height="76" fill="url(#scanGrad)" />
 
-  <!-- IDE Window Frame -->
-  <rect x="40" y="40" width="720" height="250" fill="#030712" fill-opacity="0.8" stroke="#1f2937" stroke-width="1.5" rx="12" />
-  
-  <!-- IDE Control Buttons -->
-  <circle cx="65" cy="62" r="6" fill="#ef4444" />
-  <circle cx="85" cy="62" r="6" fill="#f59e0b" />
-  <circle cx="105" cy="62" r="6" fill="#10b981" />
-  <text x="400" y="66" fill="#4b5563" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" letter-spacing="1">developer-stats.json</text>
-
-  <!-- J.A.R.V.I.S Status Indicator -->
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" letter-spacing="0.5">
-    <circle class="pulse-green" cx="645" cy="62" r="4" fill="#10b981" />
-    <text x="655" y="66" fill="#10b981">J.A.R.V.I.S : ONLINE</text>
+  <g transform="translate(52 44)">
+    <rect width="1096" height="332" rx="18" fill="#020617" fill-opacity=".78" stroke="#334155" />
+    <rect x="1" y="1" width="1094" height="52" rx="18" fill="#0f172a" fill-opacity=".76" />
+    <line x1="0" y1="53" x2="1096" y2="53" stroke="#334155" />
+    <circle cx="28" cy="26" r="7" fill="#ef4444" />
+    <circle cx="52" cy="26" r="7" fill="#f59e0b" />
+    <circle cx="76" cy="26" r="7" fill="#10b981" />
+    <text x="548" y="32" fill="#94a3b8" font-family="Consolas, Monaco, monospace" font-size="14" text-anchor="middle">profile://lchryu/cyber-lab</text>
+    <circle class="glow" cx="942" cy="26" r="5" fill="#22c55e" />
+    <text x="958" y="31" fill="#22c55e" font-family="Consolas, Monaco, monospace" font-size="13" font-weight="700">J.A.R.V.I.S ONLINE</text>
   </g>
 
-  <!-- Profile Text Information -->
-  <!-- Name Title with Double Glow -->
-  <text x="80" y="135" fill="url(#neonCyan)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="38" font-weight="900" letter-spacing="1">LƯƠNG CHUNG HỘI</text>
-  <text class="pulse-glow" x="80" y="135" fill="none" stroke="#22d3ee" stroke-width="2" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif" font-size="38" font-weight="900" letter-spacing="1" opacity="0.6" filter="url(#glowCyan)">LƯƠNG CHUNG HỘI</text>
+  <g transform="translate(92 126)">
+    <text x="0" y="0" fill="#67e8f9" font-family="Consolas, Monaco, monospace" font-size="16">const developer =</text>
+    <text x="0" y="58" fill="url(#cyanPink)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="58" font-weight="900" letter-spacing="2">LCHRYU</text>
+    <text x="0" y="95" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="24" font-weight="700">Luong Chung Hoi</text>
+    <text x="0" y="129" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18">Full-stack explorer  |  AI / CV learner  |  Game builder</text>
 
-  <!-- Tagline / Role -->
-  <text x="80" y="178" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" letter-spacing="0.5">Hey guys! Welcome to my lab. Let's build something crazy.</text>
-  
-  <!-- Code Typing Mockup -->
-  <g font-family="Consolas, Fira Code, Monaco, 'Courier New', monospace" font-size="14" font-weight="bold">
-    <text x="80" y="205">
-      <tspan fill="#f43f5e">const</tspan> <tspan fill="#3b82f6">explorer</tspan> = {
-    </text>
-    <text class="code-2" x="105" y="222">
-      <tspan fill="#10b981">research</tspan>: [<tspan fill="#eab308">"AI"</tspan>, <tspan fill="#eab308">"Web-Apps"</tspan>, <tspan fill="#eab308">"Mobile-Apps"</tspan>, <tspan fill="#eab308">"Games"</tspan>],
-    </text>
-    <text class="code-3" x="105" y="239">
-      <tspan fill="#10b981">motto</tspan>: <tspan fill="#eab308">"stay-hungry-stay-foolish"</tspan>,
-    </text>
-    <text class="code-4" x="105" y="256">
-      <tspan fill="#10b981">repos</tspan>: <tspan fill="#eab308">83</tspan>, <tspan fill="#10b981">contributions</tspan>: <tspan fill="#eab308">352</tspan><tspan class="cursor" fill="#06b6d4">|</tspan>
-    </text>
-    <text class="code-5" x="80" y="273">
-      };
-    </text>
+    <g transform="translate(0 160)" font-family="Consolas, Monaco, monospace" font-size="15" font-weight="700">
+      <rect width="500" height="92" rx="12" fill="#020617" fill-opacity=".72" stroke="#1e293b" />
+      <text class="line-1" x="22" y="28"><tspan fill="#f472b6">focus</tspan><tspan fill="#94a3b8">:</tspan> <tspan fill="#facc15">["web", "mobile", "AI", "games"]</tspan></text>
+      <text class="line-2" x="22" y="54"><tspan fill="#38bdf8">status</tspan><tspan fill="#94a3b8">:</tspan> <tspan fill="#22c55e">"building useful things"</tspan></text>
+      <text class="line-3" x="22" y="80"><tspan fill="#a78bfa">motto</tspan><tspan fill="#94a3b8">:</tspan> <tspan fill="#facc15">"learn deeply, ship clean"</tspan><tspan class="cursor" fill="#67e8f9"> _</tspan></text>
+    </g>
+  </g>
+
+  <g transform="translate(674 116)">
+    <rect width="236" height="224" rx="16" fill="#020617" fill-opacity=".66" stroke="#334155" />
+    <text x="22" y="35" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="800">SYSTEM LOAD</text>
+    <g transform="translate(30 70)" fill="url(#cyanPink)">
+      <rect class="bar-1" x="0" y="64" width="18" height="82" rx="5" />
+      <rect class="bar-2" x="34" y="28" width="18" height="118" rx="5" />
+      <rect class="bar-3" x="68" y="52" width="18" height="94" rx="5" />
+      <rect class="bar-4" x="102" y="12" width="18" height="134" rx="5" />
+      <rect class="bar-5" x="136" y="42" width="18" height="104" rx="5" />
+    </g>
+    <text x="30" y="197" fill="#94a3b8" font-family="Consolas, Monaco, monospace" font-size="13">WEB AI CV GAME</text>
+  </g>
+
+  <g transform="translate(930 118)">
+    <rect width="196" height="196" rx="98" fill="#020617" fill-opacity=".60" stroke="#334155" />
+    <circle cx="98" cy="98" r="72" fill="none" stroke="#1e293b" stroke-width="2" />
+    <circle cx="98" cy="98" r="46" fill="none" stroke="#1e293b" stroke-width="2" />
+    <circle cx="98" cy="98" r="8" fill="#22d3ee" filter="url(#softGlow)" />
+    <line x1="98" y1="26" x2="98" y2="170" stroke="#1e293b" />
+    <line x1="26" y1="98" x2="170" y2="98" stroke="#1e293b" />
+    <path class="radar" d="M98 98 L98 30 A68 68 0 0 1 158 68 Z" fill="#22d3ee" opacity=".25" />
+    <circle cx="134" cy="72" r="4" fill="#f472b6" class="glow" />
+    <circle cx="66" cy="122" r="4" fill="#facc15" class="glow" />
+    <text x="98" y="226" fill="#94a3b8" font-family="Consolas, Monaco, monospace" font-size="13" text-anchor="middle">WORLD QUEST: 02/195</text>
+  </g>
+
+  <g transform="translate(676 352)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="800">
+    <rect x="0" y="-24" width="72" height="32" rx="16" fill="#082f49" stroke="#0ea5e9" />
+    <text x="36" y="-3" fill="#e0f2fe" text-anchor="middle">C++</text>
+    <rect x="84" y="-24" width="92" height="32" rx="16" fill="#172554" stroke="#3b82f6" />
+    <text x="130" y="-3" fill="#dbeafe" text-anchor="middle">Python</text>
+    <rect x="188" y="-24" width="118" height="32" rx="16" fill="#312e81" stroke="#8b5cf6" />
+    <text x="247" y="-3" fill="#ede9fe" text-anchor="middle">TypeScript</text>
+    <rect x="318" y="-24" width="72" height="32" rx="16" fill="#4a044e" stroke="#d946ef" />
+    <text x="354" y="-3" fill="#fae8ff" text-anchor="middle">AI</text>
+    <rect x="402" y="-24" width="92" height="32" rx="16" fill="#451a03" stroke="#f59e0b" />
+    <text x="448" y="-3" fill="#ffedd5" text-anchor="middle">Games</text>
   </g>
 </svg>
