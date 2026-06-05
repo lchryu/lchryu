@@ -21,17 +21,25 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0; }
     }
+    @keyframes statusPulse {
+      0%, 100% { opacity: 0.4; }
+      50% { opacity: 1; }
+    }
     @keyframes type-line-2 {
-      0%, 25% { opacity: 0; }
-      30%, 100% { opacity: 1; }
+      0%, 20% { opacity: 0; }
+      25%, 100% { opacity: 1; }
     }
     @keyframes type-line-3 {
-      0%, 55% { opacity: 0; }
-      60%, 100% { opacity: 1; }
+      0%, 45% { opacity: 0; }
+      50%, 100% { opacity: 1; }
     }
     @keyframes type-line-4 {
-      0%, 85% { opacity: 0; }
-      90%, 100% { opacity: 1; }
+      0%, 70% { opacity: 0; }
+      75%, 100% { opacity: 1; }
+    }
+    @keyframes type-line-5 {
+      0%, 90% { opacity: 0; }
+      95%, 100% { opacity: 1; }
     }
 
     .blob-1 { animation: float-1 12s infinite ease-in-out; }
@@ -42,10 +50,12 @@
     .star-4 { animation: twinkle 3.5s infinite ease-in-out; }
     .star-5 { animation: twinkle 5s infinite ease-in-out; }
     .pulse-glow { animation: pulse 3s infinite ease-in-out; }
+    .pulse-green { animation: statusPulse 1.8s infinite ease-in-out; }
     .cursor { animation: blink 1s infinite; }
     .code-2 { animation: type-line-2 4s ease-out forwards; }
     .code-3 { animation: type-line-3 4s ease-out forwards; }
     .code-4 { animation: type-line-4 4s ease-out forwards; }
+    .code-5 { animation: type-line-5 4s ease-out forwards; }
   </style>
 
   <!-- Definitions for Gradients and Filters -->
@@ -130,13 +140,19 @@
   <path class="star-5" d="M 500 80 q 3 0 3 -3 q 0 3 3 3 q -3 0 -3 3 q 0 -3 -3 -3" fill="#eab308" opacity="0.75" />
 
   <!-- IDE Window Frame -->
-  <rect x="40" y="40" width="720" height="242" fill="#030712" fill-opacity="0.8" stroke="#1f2937" stroke-width="1.5" rx="12" />
+  <rect x="40" y="40" width="720" height="250" fill="#030712" fill-opacity="0.8" stroke="#1f2937" stroke-width="1.5" rx="12" />
   
   <!-- IDE Control Buttons -->
   <circle cx="65" cy="62" r="6" fill="#ef4444" />
   <circle cx="85" cy="62" r="6" fill="#f59e0b" />
   <circle cx="105" cy="62" r="6" fill="#10b981" />
   <text x="400" y="66" fill="#4b5563" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle" font-weight="bold" letter-spacing="1">developer-stats.json</text>
+
+  <!-- J.A.R.V.I.S Status Indicator -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="bold" letter-spacing="0.5">
+    <circle class="pulse-green" cx="645" cy="62" r="4" fill="#10b981" />
+    <text x="655" y="66" fill="#10b981">J.A.R.V.I.S : ONLINE</text>
+  </g>
 
   <!-- Profile Text Information -->
   <!-- Name Title with Double Glow -->
@@ -148,16 +164,19 @@
   
   <!-- Code Typing Mockup -->
   <g font-family="Consolas, Fira Code, Monaco, 'Courier New', monospace" font-size="14" font-weight="bold">
-    <text x="80" y="212">
+    <text x="80" y="205">
       <tspan fill="#f43f5e">const</tspan> <tspan fill="#3b82f6">explorer</tspan> = {
     </text>
-    <text class="code-2" x="105" y="232">
+    <text class="code-2" x="105" y="222">
       <tspan fill="#10b981">research</tspan>: [<tspan fill="#eab308">"AI"</tspan>, <tspan fill="#eab308">"Web-Apps"</tspan>, <tspan fill="#eab308">"Mobile-Apps"</tspan>, <tspan fill="#eab308">"Games"</tspan>],
     </text>
-    <text class="code-3" x="105" y="252">
-      <tspan fill="#10b981">motto</tspan>: <tspan fill="#eab308">"stay-hungry-stay-foolish"</tspan><tspan class="cursor" fill="#06b6d4">|</tspan>
+    <text class="code-3" x="105" y="239">
+      <tspan fill="#10b981">motto</tspan>: <tspan fill="#eab308">"stay-hungry-stay-foolish"</tspan>,
     </text>
-    <text class="code-4" x="80" y="272">
+    <text class="code-4" x="105" y="256">
+      <tspan fill="#10b981">repos</tspan>: <tspan fill="#eab308">83</tspan>, <tspan fill="#10b981">contributions</tspan>: <tspan fill="#eab308">352</tspan><tspan class="cursor" fill="#06b6d4">|</tspan>
+    </text>
+    <text class="code-5" x="80" y="273">
       };
     </text>
   </g>
