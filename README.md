@@ -59,7 +59,7 @@ I'm a **Tech Enthusiast** and **Explorer** on a quest to understand how the worl
 
 <div align="center">
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=lchryu&theme=tokyonight&margin-w=15&margin-h=15" alt="lchryu's GitHub Trophies" />
+    <img src="https://github-profile-trophy.vercel.app/?username=lchryu&theme=tokyonight&margin-w=15&margin-h=15&v=1" alt="lchryu's GitHub Trophies" />
   </a>
 </div>
 
@@ -72,12 +72,12 @@ I'm a **Tech Enthusiast** and **Explorer** on a quest to understand how the worl
     <tr>
       <td align="center" valign="top">
         <a href="https://github.com/lchryu/Predict-gender-from-voice">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=lchryu&repo=Predict-gender-from-voice&theme=tokyonight" alt="Predict gender from voice" />
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=lchryu&repo=Predict-gender-from-voice&theme=tokyonight&v=1" alt="Predict gender from voice" />
         </a>
       </td>
       <td align="center" valign="top">
         <a href="https://github.com/lchryu/Jack-s-Adventure">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=lchryu&repo=Jack-s-Adventure&theme=tokyonight" alt="Jack's Adventure" />
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=lchryu&repo=Jack-s-Adventure&theme=tokyonight&v=1" alt="Jack's Adventure" />
         </a>
       </td>
     </tr>
@@ -93,12 +93,12 @@ I'm a **Tech Enthusiast** and **Explorer** on a quest to understand how the worl
     <tr>
       <td align="center" valign="top">
         <a href="https://github.com/lchryu">
-          <img src="https://github-readme-stats.vercel.app/api?username=lchryu&show_icons=true&theme=tokyonight&count_private=true" alt="lchryu's GitHub stats" height="180px" />
+          <img src="https://github-readme-stats.vercel.app/api?username=lchryu&show_icons=true&theme=tokyonight&count_private=true&v=1" alt="lchryu's GitHub stats" height="180px" />
         </a>
       </td>
       <td align="center" valign="top">
         <a href="https://github.com/lchryu">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lchryu&layout=compact&theme=tokyonight" alt="lchryu's Top Langs" height="180px" />
+          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lchryu&layout=compact&theme=tokyonight&v=1" alt="lchryu's Top Langs" height="180px" />
         </a>
       </td>
     </tr>
@@ -107,7 +107,7 @@ I'm a **Tech Enthusiast** and **Explorer** on a quest to understand how the worl
   <br/>
   
   <a href="https://github.com/lchryu">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=lchryu&theme=tokyonight" alt="lchryu's Commit Streak" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=lchryu&theme=tokyonight&v=1" alt="lchryu's Commit Streak" />
   </a>
 </div>
 
